@@ -38,6 +38,6 @@ public class Event {
     }
 
     public String getEntertainmentOption() {
-        return null;
+        return entertainmentOption;
     }
 }
