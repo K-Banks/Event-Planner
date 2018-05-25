@@ -128,4 +128,8 @@ public class Event {
             this.setCoupon(option);
         }
     }
+
+    public boolean checkFoodOption(String option) {
+        return false;
+    }
 }

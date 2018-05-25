@@ -146,4 +146,10 @@ public class EventTest {
         Integer expected = 1125;
         assertEquals(expected, testEvent.getEstimatePrice());
     }
+
+    @Test
+    public void checkFoodOption_ensuresAValidChoiceWasEnteredForFoodOptions_true() {
+        Event testEvent = new Event(10, "", "", "");
+        assertTrue(testEvent.checkFoodOption("chicken"));
+    }
 }
