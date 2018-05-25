@@ -46,6 +46,14 @@ public class Event {
     }
 
     public Integer evaluateFoodPrice() {
-        return 0;
+        Integer foodPrice = 0;
+        if (foodOption.equals("chicken") || foodOption.equals("vegetarian")) {
+            foodPrice = numberOfGuests*5;
+        } else if (foodOption.equals("beef")) {
+            foodPrice = numberOfGuests*7;
+        } else if (foodOption.equals("buffet")) {
+            foodPrice = numberOfGuests*10;
+        }
+        return foodPrice;
     }
 }
