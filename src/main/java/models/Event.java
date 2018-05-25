@@ -148,6 +148,11 @@ public class Event {
     }
 
     public boolean checkEntertainmentOption(String option) {
-        return false;
+        option = option.toLowerCase();
+        if (option.equals("live dj") || option.equals("live band") || option.equals("set playlist") || option.equals("custom playlist")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
