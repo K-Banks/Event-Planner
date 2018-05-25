@@ -58,6 +58,10 @@ public class Event {
         return coupon;
     }
 
+    public void setCoupon(String option) {
+
+    }
+
     public Integer evaluateFoodPrice() {
         Integer foodPrice = 0;
         if (foodOption.equals("chicken") || foodOption.equals("vegetarian")) {

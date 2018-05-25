@@ -112,4 +112,11 @@ public class EventTest {
         Event testEvent = new Event(20, "", "", "");
         assertTrue(testEvent.getCoupon() instanceof String);
     }
+
+    @Test
+    public void setCoupon_setsCouponValue_string() {
+        Event testEvent = new Event(20, "", "", "");
+        testEvent.setCoupon("string");
+        assertTrue(testEvent.getCoupon().equals("string"));
+    }
 }
