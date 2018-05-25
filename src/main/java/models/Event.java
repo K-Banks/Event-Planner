@@ -34,6 +34,6 @@ public class Event {
     }
 
     public void setBeverageOption(String option) {
-
+        beverageOption = option;
     }
 }
