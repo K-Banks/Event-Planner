@@ -27,13 +27,15 @@
           <file leaf-file-name="Event.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Event.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
                   <folding>
                     <element signature="e#224#225#0" expanded="true" />
                     <element signature="e#247#248#0" expanded="true" />
                     <element signature="e#612#613#0" expanded="true" />
                     <element signature="e#650#651#0" expanded="true" />
+                    <element signature="e#688#689#0" expanded="true" />
+                    <element signature="e#715#716#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -46,8 +48,8 @@
           <file leaf-file-name="EventTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/models/EventTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+                <state relative-caret-position="639">
+                  <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -452,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EventTest.getFoodOption_returnsFoodOption_chicken">
+  <component name="RunManager" selected="JUnit.EventTest.setFoodOption_setsFoodOption_beef">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -515,6 +517,29 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.EventTest" />
       <option name="METHOD_NAME" value="getNumberOfGuests_returnsNumberOfGuests_4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="EventTest.setFoodOption_setsFoodOption_beef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Event-Planner_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.EventTest" />
+      <option name="METHOD_NAME" value="setFoodOption_setsFoodOption_beef" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -591,9 +616,11 @@
       <item itemvalue="JUnit.EventTest.getNumberOfGuests_returnsNumberOfGuests_4" />
       <item itemvalue="JUnit.EventTest.setNumberOfGuests_setsNumberOfGuests_6" />
       <item itemvalue="JUnit.EventTest.getFoodOption_returnsFoodOption_chicken" />
+      <item itemvalue="JUnit.EventTest.setFoodOption_setsFoodOption_beef" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventTest.setFoodOption_setsFoodOption_beef" />
         <item itemvalue="JUnit.EventTest.getFoodOption_returnsFoodOption_chicken" />
         <item itemvalue="JUnit.EventTest.setNumberOfGuests_setsNumberOfGuests_6" />
         <item itemvalue="JUnit.EventTest.getNumberOfGuests_returnsNumberOfGuests_4" />
@@ -629,6 +656,21 @@
     </history-entry>
     <history-entry file="EventTest_getNumberOfGuests_returnsNumberOfGuests_4 - 2018.05.25 at 09h 31m 12s.xml">
       <configuration name="EventTest.getNumberOfGuests_returnsNumberOfGuests_4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_setNumberOfGuests_setsNumberOfGuests_6 - 2018.05.25 at 09h 34m 15s.xml">
+      <configuration name="EventTest.setNumberOfGuests_setsNumberOfGuests_6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_setNumberOfGuests_setsNumberOfGuests_6 - 2018.05.25 at 09h 34m 24s.xml">
+      <configuration name="EventTest.setNumberOfGuests_setsNumberOfGuests_6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_setNumberOfGuests_setsNumberOfGuests_6 - 2018.05.25 at 09h 35m 04s.xml">
+      <configuration name="EventTest.setNumberOfGuests_setsNumberOfGuests_6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_getFoodOption_returnsFoodOption_chicken - 2018.05.25 at 09h 37m 04s.xml">
+      <configuration name="EventTest.getFoodOption_returnsFoodOption_chicken" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_getFoodOption_returnsFoodOption_chicken - 2018.05.25 at 09h 37m 30s.xml">
+      <configuration name="EventTest.getFoodOption_returnsFoodOption_chicken" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -705,21 +747,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="476">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="e#224#225#0" expanded="true" />
             <element signature="e#247#248#0" expanded="true" />
             <element signature="e#612#613#0" expanded="true" />
             <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/EventTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="639">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

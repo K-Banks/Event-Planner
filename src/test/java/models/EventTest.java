@@ -33,4 +33,12 @@ public class EventTest {
         String expected = "chicken";
         assertEquals(expected, testEvent.getFoodOption());
     }
+
+    @Test
+    public void setFoodOption_setsFoodOption_beef() {
+        Event testEvent = new Event(4, "chicken", "", "");
+        String expected = "beef";
+        testEvent.setFoodOption(expected);
+        assertEquals(expected, testEvent.getFoodOption());
+    }
 }

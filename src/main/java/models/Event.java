@@ -24,4 +24,8 @@ public class Event {
     public String getFoodOption() {
         return foodOption;
     }
+
+    public void setFoodOption(String option) {
+
+    }
 }
