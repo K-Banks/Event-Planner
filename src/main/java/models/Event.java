@@ -5,7 +5,7 @@ public class Event {
     private String foodOption;
     private String beverageOption;
     private String entertainmentOption;
-    private Integer estimatePrice;
+    private Integer estimatePrice = 0;
 
     public Event(int numberOfGuests, String foodOption, String beverageOption, String entertainmentOption) {
         this.numberOfGuests = numberOfGuests;
@@ -47,7 +47,7 @@ public class Event {
     }
 
     public Integer getEstimatePrice() {
-        return 0;
+        return estimatePrice;
     }
 
     public Integer evaluateFoodPrice() {
