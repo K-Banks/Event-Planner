@@ -116,6 +116,16 @@ public class Event {
         estimatePrice = this.evaluateFoodPrice() + this.evaluateBeveragePrice() + this.evaluateEntertainmentPrice();
         if (coupon.equals("discount")) {
             estimatePrice = estimatePrice-(estimatePrice/10);
+        } else if (coupon.equals("100off")) {
+            estimatePrice = estimatePrice-100;
+        } else {
+            estimatePrice = estimatePrice;
+        }
+    }
+
+    public void checkCoupon(String option) {
+        if (option.toLowerCase().equals("discount")) {
+
         }
     }
 }
