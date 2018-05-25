@@ -22,6 +22,6 @@ public class Event {
     }
 
     public String getFoodOption() {
-        return null;
+        return foodOption;
     }
 }
