@@ -78,4 +78,11 @@ public class EventTest {
         Integer expected = 70;
         assertEquals(expected, testEvent.evaluateFoodPrice());
     }
+
+    @Test
+    public void evaluateBeveragePrice_returnsEstimatedPriceForBeverages_60() {
+        Event testEvent = new Event(10, "beef", "wine", "");
+        Integer expected = 60;
+        assertEquals(expected, testEvent.evaluateBeveragePrice());
+    }
 }

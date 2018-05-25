@@ -56,4 +56,24 @@ public class Event {
         }
         return foodPrice;
     }
+
+    public Integer evaluateBeveragePrice() {
+        Integer beveragePrice = 0;
+        if (beverageOption.equals("water")) {
+            beveragePrice = numberOfGuests*0;
+        } else if (beverageOption.equals("soda")) {
+            beveragePrice = numberOfGuests/2;
+        } else if (beverageOption.equals("beer")) {
+            beveragePrice = numberOfGuests*2;
+        } else if (beverageOption.equals("wine")) {
+            beveragePrice = numberOfGuests*4;
+        } else if (beverageOption.equals("open bar")) {
+            beveragePrice = numberOfGuests*6;
+        } else if (beverageOption.equals("water")) {
+            beveragePrice = beveragePrice;
+        } else {
+            beveragePrice=beveragePrice;
+        }
+        return beveragePrice;
+    }
 }
