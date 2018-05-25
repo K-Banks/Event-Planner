@@ -18,6 +18,6 @@ public class Event {
     }
 
     public void setNumberOfGuests(int number) {
-        numberOfGuests = 0;
+        numberOfGuests = number;
     }
 }
