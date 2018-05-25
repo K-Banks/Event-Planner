@@ -106,4 +106,10 @@ public class EventTest {
         Integer expected = 410;
         assertEquals(expected, testEvent.getEstimatePrice());
     }
+
+    @Test
+    public void getCoupon_returnsCouponValue_true() {
+        Event testEvent = new Event(20, "", "", "");
+        assertTrue(testEvent.getCoupon() instanceof String);
+    }
 }

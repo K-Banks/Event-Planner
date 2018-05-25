@@ -5,13 +5,17 @@ public class Event {
     private String foodOption;
     private String beverageOption;
     private String entertainmentOption;
-    private Integer estimatePrice = 0;
+    private Integer estimatePrice;
+    private String coupon;
 
     public Event(int numberOfGuests, String foodOption, String beverageOption, String entertainmentOption) {
         this.numberOfGuests = numberOfGuests;
         this.foodOption = foodOption;
         this.beverageOption = beverageOption;
         this.entertainmentOption = entertainmentOption;
+
+        this.estimatePrice = 0;
+        this.coupon = "";
     }
 
     public Integer getNumberOfGuests() {
@@ -48,6 +52,10 @@ public class Event {
 
     public Integer getEstimatePrice() {
         return estimatePrice;
+    }
+
+    public String getCoupon() {
+        return null;
     }
 
     public Integer evaluateFoodPrice() {
