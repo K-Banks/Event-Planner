@@ -152,4 +152,16 @@ public class EventTest {
         Event testEvent = new Event(10, "", "", "");
         assertTrue(testEvent.checkFoodOption("chicken"));
     }
+
+    @Test
+    public void checkBeverageOption_ensuresAValidChoiceWasEnteredForBeverageOptions_true() {
+        Event testEvent = new Event(10, "", "", "");
+        assertTrue(testEvent.checkBeverageOption("beer"));
+    }
+
+//    @Test
+//    public void checkFoodOption_ensuresAValidChoiceWasEnteredForFoodOptions_true() {
+//        Event testEvent = new Event(10, "", "", "");
+//        assertTrue(testEvent.checkFoodOption("chicken"));
+//    }
 }

@@ -137,4 +137,8 @@ public class Event {
             return false;
         }
     }
+
+    public boolean checkBeverageOption(String option) {
+        return false;
+    }
 }
