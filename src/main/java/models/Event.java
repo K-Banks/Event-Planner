@@ -40,4 +40,8 @@ public class Event {
     public String getEntertainmentOption() {
         return entertainmentOption;
     }
+
+    public void setEntertainmentOption(String option) {
+
+    }
 }
