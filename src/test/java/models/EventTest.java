@@ -80,9 +80,9 @@ public class EventTest {
     }
 
     @Test
-    public void evaluateBeveragePrice_returnsEstimatedPriceForBeverages_60() {
+    public void evaluateBeveragePrice_returnsEstimatedPriceForBeverages_40() {
         Event testEvent = new Event(10, "beef", "wine", "");
-        Integer expected = 60;
+        Integer expected = 40;
         assertEquals(expected, testEvent.evaluateBeveragePrice());
     }
 }
