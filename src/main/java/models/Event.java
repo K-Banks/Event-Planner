@@ -99,4 +99,8 @@ public class Event {
         }
         return entertainmentPrice;
     }
+
+    public void calculateEstimatePrice() {
+
+    }
 }

@@ -99,7 +99,11 @@ public class EventTest {
         assertTrue(testEvent.getEstimatePrice() instanceof Integer);
     }
 
-//    @Test
-//    public void calculateEstimatePrice_() {
-//    }
+    @Test
+    public void calculateEstimatePrice_setsEventEstimatePriceBasedOnProvidedParameters_410() {
+        Event testEvent = new Event(20, "buffet", "soda", "live dj");
+        testEvent.calculateEstimatePrice();
+        Integer expected = 410;
+        assertEquals(expected, testEvent.getEstimatePrice());
+    }
 }
