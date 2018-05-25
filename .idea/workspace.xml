@@ -454,11 +454,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EventTest.setFoodOption_setsFoodOption_beef">
+  <component name="RunManager" selected="JUnit.EventTest.getBeverageOption_returnsBeverageOption_water">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="EventTest.event_instantiatesAnEventObject_true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EventTest.getBeverageOption_returnsBeverageOption_water" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Event-Planner_test" />
       <extension name="coverage">
         <pattern>
@@ -470,7 +470,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.EventTest" />
-      <option name="METHOD_NAME" value="event_instantiatesAnEventObject_true" />
+      <option name="METHOD_NAME" value="getBeverageOption_returnsBeverageOption_water" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -612,19 +612,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.EventTest.event_instantiatesAnEventObject_true" />
       <item itemvalue="JUnit.EventTest.getNumberOfGuests_returnsNumberOfGuests_4" />
       <item itemvalue="JUnit.EventTest.setNumberOfGuests_setsNumberOfGuests_6" />
       <item itemvalue="JUnit.EventTest.getFoodOption_returnsFoodOption_chicken" />
       <item itemvalue="JUnit.EventTest.setFoodOption_setsFoodOption_beef" />
+      <item itemvalue="JUnit.EventTest.getBeverageOption_returnsBeverageOption_water" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventTest.getBeverageOption_returnsBeverageOption_water" />
         <item itemvalue="JUnit.EventTest.setFoodOption_setsFoodOption_beef" />
         <item itemvalue="JUnit.EventTest.getFoodOption_returnsFoodOption_chicken" />
         <item itemvalue="JUnit.EventTest.setNumberOfGuests_setsNumberOfGuests_6" />
         <item itemvalue="JUnit.EventTest.getNumberOfGuests_returnsNumberOfGuests_4" />
-        <item itemvalue="JUnit.EventTest.event_instantiatesAnEventObject_true" />
       </list>
     </recent_temporary>
   </component>
