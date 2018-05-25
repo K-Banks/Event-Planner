@@ -16,4 +16,8 @@ public class Event {
     public Integer getNumberOfGuests() {
         return numberOfGuests;
     }
+
+    public void setNumberOfGuests(int number) {
+        numberOfGuests = 0;
+    }
 }

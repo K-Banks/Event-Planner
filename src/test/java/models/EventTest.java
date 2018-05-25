@@ -18,4 +18,12 @@ public class EventTest {
         Integer expected = 4;
         assertEquals(expected, testEvent.getNumberOfGuests());
     }
+
+    @Test
+    public void setNumberOfGuests_setsNumberOfGuests_6() {
+        Event testEvent = new Event(4, "", "", "");
+        Integer expected = 6;
+        testEvent.setNumberOfGuests(expected);
+        assertEquals(expected, testEvent.getNumberOfGuests());
+    }
 }
