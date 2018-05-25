@@ -139,6 +139,11 @@ public class Event {
     }
 
     public boolean checkBeverageOption(String option) {
-        return false;
+        option = option.toLowerCase();
+        if (option.equals("water") || option.equals("beer") || option.equals("soda") || option.equals("wine") || option.equals("open bar")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
