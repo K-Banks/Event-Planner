@@ -5,4 +5,15 @@ public class Event {
     private String foodOption;
     private String beverageOption;
     private String entertainmentOption;
+
+    public Event(int numberOfGuests, String foodOption, String beverageOption, String entertainmentOption) {
+        this.numberOfGuests = numberOfGuests;
+        this.foodOption = foodOption;
+        this.beverageOption = beverageOption;
+        this.entertainmentOption = entertainmentOption;
+    }
+
+    public Integer getNumberOfGuests() {
+        return 0;
+    }
 }
