@@ -119,4 +119,13 @@ public class EventTest {
         testEvent.setCoupon("string");
         assertTrue(testEvent.getCoupon().equals("string"));
     }
+
+    @Test
+    public void calculateEstimatePrice_appliesDiscountToEstimatePrice_369() {
+        Event testEvent = new Event(20, "buffet", "soda", "live dj");
+        testEvent.setCoupon("Discount");
+        testEvent.calculateEstimatePrice();
+        Integer expected = 369;
+        assertEquals(expected, testEvent.getEstimatePrice());
+    }
 }
