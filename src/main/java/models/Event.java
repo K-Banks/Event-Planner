@@ -59,7 +59,7 @@ public class Event {
     }
 
     public void setCoupon(String option) {
-
+        coupon = option;
     }
 
     public Integer evaluateFoodPrice() {
