@@ -159,9 +159,9 @@ public class EventTest {
         assertTrue(testEvent.checkBeverageOption("beer"));
     }
 
-//    @Test
-//    public void checkFoodOption_ensuresAValidChoiceWasEnteredForFoodOptions_true() {
-//        Event testEvent = new Event(10, "", "", "");
-//        assertTrue(testEvent.checkFoodOption("chicken"));
-//    }
+    @Test
+    public void checkEntertainmentOption_ensuresAValidChoiceWasEnteredForEntertainmentOptions_true() {
+        Event testEvent = new Event(10, "", "", "");
+        assertTrue(testEvent.checkEntertainmentOption("live band"));
+    }
 }

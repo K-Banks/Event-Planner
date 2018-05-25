@@ -146,4 +146,8 @@ public class Event {
             return false;
         }
     }
+
+    public boolean checkEntertainmentOption(String option) {
+        return false;
+    }
 }
