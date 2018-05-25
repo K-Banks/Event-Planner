@@ -44,4 +44,8 @@ public class Event {
     public void setEntertainmentOption(String option) {
         entertainmentOption = option;
     }
+
+    public Integer evaluateFoodPrice() {
+        return 0;
+    }
 }
