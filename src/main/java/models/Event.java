@@ -33,5 +33,7 @@ public class Event {
         return beverageOption;
     }
 
+    public void setBeverageOption(String option) {
 
+    }
 }
