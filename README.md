@@ -4,7 +4,7 @@
 
 ## Description
 
-_This application will take user selected options for an event planning service and offer a quote on the event._
+_This application will take user selected options for an event planning service and offer an estimate on the event._
 
 ## Setup/Installation Requirement for Developers:
 
@@ -45,12 +45,12 @@ _Please contact author at kayleubanks@gmail.com with any bugs._
  * Java
  * IntelliJ IDEA
  * Gradle
+ * JUnit
 
 ### Specs
 
-| Behaviour | Input: | Output: |
-| :------------ | :------------- | :------------- |
-| * webpack | * bootstrap | * bootstrap |
+ * User will be able to input a series of parameters for an event (ie: number of guests, type of entertainment, drinks to be provided, ect.)
+ * User will receive an estimate of the total cost of the event based on provided parameters
 
 ### License
 
