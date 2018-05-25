@@ -130,6 +130,11 @@ public class Event {
     }
 
     public boolean checkFoodOption(String option) {
-        return false;
+        option = option.toLowerCase();
+        if (option.equals("chicken") || option.equals("beef") || option.equals("vegetarian") || option.equals("buffet")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
