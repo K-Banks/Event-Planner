@@ -31,7 +31,7 @@ public class App {
                 System.out.println("Please enter one of the four choices as your selection for the event (chicken, vegetarian, beef, or buffet)");
                 System.out.print("Your selection: ");
                 String userFoodChoice = bufferedReader.readLine().toLowerCase();
-                while (!userFoodChoice.contains("chicken") || !userFoodChoice.contains("beef") || !userFoodChoice.contains("vegetarian") || !userFoodChoice.contains("buffet")) {
+                while (newEvent.checkFoodOption(userFoodChoice) == false) {
                     System.out.println("Sorry, that is an invalid selection. Please enter one of the four choices (chicken, vegetarian, beef, or buffet)");
                     System.out.print("Your selection: ");
                     userFoodChoice = bufferedReader.readLine().toLowerCase();
