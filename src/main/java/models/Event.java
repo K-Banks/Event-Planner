@@ -30,6 +30,8 @@ public class Event {
     }
 
     public String getBeverageOption() {
-        return null;
+        return beverageOption;
     }
+
+
 }
