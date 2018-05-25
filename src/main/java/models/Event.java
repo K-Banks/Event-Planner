@@ -42,6 +42,6 @@ public class Event {
     }
 
     public void setEntertainmentOption(String option) {
-
+        entertainmentOption = option;
     }
 }
