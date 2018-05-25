@@ -9,6 +9,7 @@ public class App {
     public static void main(String[] args) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         Boolean end = true;
+        Boolean firstCheckout = true;
 
         while (end) {
             System.out.println("Hello, welcome to Event Planner.");
@@ -52,7 +53,40 @@ public class App {
 
                 System.out.println("Finally, let's decide on entertainment. We offer a limited selection of musical entertainment. We options for a live DJ, a live band, our own set playlist or a custom playlist we can tailor to your specific taste.");
                 System.out.println("Please enter one of the following as your selection: live DJ, live band, set playlist, or custom playlist");
+                String userEntertainmentChoice = bufferedReader.readLine().toLowerCase();
+                while (newEvent.checkEntertainmentOption(userEntertainmentChoice) == false) {
+                    System.out.println("Sorry, that is an invalid selection. Please enter one of the four choices (live DJ, live band, set playlist, or custom playlist)");
+                    System.out.print("Your selection: ");
+                    userEntertainmentChoice = bufferedReader.readLine().toLowerCase();
+                }
+                newEvent.setEntertainmentOption(userEntertainmentChoice);
 
+                System.out.println("Awesome, we have your event details set. You are expecting " + newEvent.getNumberOfGuests() + " guests. We will be serving " + newEvent.getFoodOption() + " and " + newEvent.getBeverageOption() + " and the music will be provided by a " + newEvent.getEntertainmentOption());
+                if (newEvent.getNumberOfGuests() >= 100 && newEvent.getBeverageOption().equals("open bar")) {
+                    System.out.println("Your event qualifies for a coupon! Enter 'discount' for 10% off your estimate.");
+                } else if (firstCheckout) {
+                    System.out.println("Thank you for planning this event with us. As a first time user, enter code '100off' for $100 off your estimate!");
+                    firstCheckout = false;
+                }
+                newEvent.calculateEstimatePrice();
+                System.out.println("Your current estimate for the event is: $" + newEvent.getEstimatePrice());
+                System.out.println("Do you have a coupon code to enter? Y or N");
+                String estimateConfirm = bufferedReader.readLine().toLowerCase();
+                if (estimateConfirm.equals("y")) {
+                    System.out.print("Please enter your coupon code: ");
+                    String coupon = bufferedReader.readLine().toLowerCase();
+                    newEvent.checkCoupon(coupon);
+                    newEvent.calculateEstimatePrice();
+                    System.out.println("Your new estimate is: $" + newEvent.getEstimatePrice());
+                } else {
+                    System.out.println("Your final estimate is confirmed for $" + newEvent.getEstimatePrice());
+                }
+
+                System.out.println("Thank you for planning your event with us. Would you like to plan another? Y or N");
+                String createNewEvent = bufferedReader.readLine().toLowerCase();
+                if (createNewEvent.equals("n")) {
+                    end = false;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

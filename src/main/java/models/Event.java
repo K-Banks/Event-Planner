@@ -126,6 +126,8 @@ public class Event {
     public void checkCoupon(String option) {
         if (option.toLowerCase().equals("discount") && numberOfGuests >= 100 && !beverageOption.equals("open bar")) {
             this.setCoupon(option);
+        } else if (option.toLowerCase().equals("100off")) {
+            this.setCoupon(option);
         }
     }
 
