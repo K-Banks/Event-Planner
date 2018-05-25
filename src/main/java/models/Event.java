@@ -31,7 +31,7 @@ public class Event {
     }
 
     public void setFoodOption(String option) {
-        foodOption = option;
+        foodOption = option.toLowerCase();
     }
 
     public String getBeverageOption() {
@@ -39,7 +39,7 @@ public class Event {
     }
 
     public void setBeverageOption(String option) {
-        beverageOption = option;
+        beverageOption = option.toLowerCase();
     }
 
     public String getEntertainmentOption() {
@@ -47,7 +47,7 @@ public class Event {
     }
 
     public void setEntertainmentOption(String option) {
-        entertainmentOption = option;
+        entertainmentOption = option.toLowerCase();
     }
 
     public Integer getEstimatePrice() {
@@ -59,7 +59,7 @@ public class Event {
     }
 
     public void setCoupon(String option) {
-        coupon = option;
+        coupon = option.toLowerCase();
     }
 
     public Integer evaluateFoodPrice() {
@@ -114,5 +114,8 @@ public class Event {
 
     public void calculateEstimatePrice() {
         estimatePrice = this.evaluateFoodPrice() + this.evaluateBeveragePrice() + this.evaluateEntertainmentPrice();
+        if (coupon.equals("discount")) {
+            estimatePrice = estimatePrice-(estimatePrice/10);
+        }
     }
 }
