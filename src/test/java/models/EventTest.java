@@ -26,4 +26,11 @@ public class EventTest {
         testEvent.setNumberOfGuests(expected);
         assertEquals(expected, testEvent.getNumberOfGuests());
     }
+
+    @Test
+    public void getFoodOption_returnsFoodOption_chicken() {
+        Event testEvent = new Event(4, "chicken", "", "");
+        String expected = "chicken";
+        assertEquals(expected, testEvent.getFoodOption());
+    }
 }

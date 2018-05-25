@@ -20,4 +20,8 @@ public class Event {
     public void setNumberOfGuests(int number) {
         numberOfGuests = number;
     }
+
+    public String getFoodOption() {
+        return null;
+    }
 }
