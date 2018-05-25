@@ -128,4 +128,13 @@ public class EventTest {
         Integer expected = 369;
         assertEquals(expected, testEvent.getEstimatePrice());
     }
+
+    @Test
+    public void calculateEstimatePrice_appliesDiscountToEstimatePrice_310() {
+        Event testEvent = new Event(20, "buffet", "soda", "live dj");
+        testEvent.setCoupon("100off");
+        testEvent.calculateEstimatePrice();
+        Integer expected = 310;
+        assertEquals(expected, testEvent.getEstimatePrice());
+    }
 }
