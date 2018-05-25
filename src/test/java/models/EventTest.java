@@ -140,10 +140,10 @@ public class EventTest {
 
     @Test
     public void validateCouponOffer_checksIfDiscountCouponCanBeApplied_true() {
-        Event testEvent = new Event(20, "buffet", "soda", "live dj");
+        Event testEvent = new Event(100, "buffet", "soda", "live dj");
         testEvent.checkCoupon("Discount");
         testEvent.calculateEstimatePrice();
-        Integer expected = 369;
+        Integer expected = 1125;
         assertEquals(expected, testEvent.getEstimatePrice());
     }
 }
