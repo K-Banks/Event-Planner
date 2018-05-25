@@ -58,6 +58,8 @@ public class Event {
             foodPrice = numberOfGuests*7;
         } else if (foodOption.equals("buffet")) {
             foodPrice = numberOfGuests*10;
+        } else {
+            foodPrice = foodPrice;
         }
         return foodPrice;
     }
@@ -80,5 +82,21 @@ public class Event {
             beveragePrice=beveragePrice;
         }
         return beveragePrice;
+    }
+
+    public Integer evaluateEntertainmentPrice() {
+        Integer entertainmentPrice = 0;
+        if (entertainmentOption.equals("live dj")) {
+            entertainmentPrice = 200;
+        } else if (entertainmentOption.equals("live band")) {
+            entertainmentPrice = 500;
+        } else if (entertainmentOption.equals("set playlist")) {
+            entertainmentPrice = entertainmentPrice;
+        } else if (entertainmentOption.equals("custom playlist")) {
+            entertainmentPrice = 150;
+        } else {
+            entertainmentPrice = entertainmentPrice;
+        }
+        return entertainmentPrice;
     }
 }

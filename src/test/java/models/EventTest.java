@@ -87,8 +87,19 @@ public class EventTest {
     }
 
     @Test
+    public void evaluateEntertainmentPrice_returnsEntertainmentPrice_500() {
+        Event testEvent = new Event(10, "beef", "wine", "live band");
+        Integer expected = 500;
+        assertEquals(expected, testEvent.evaluateEntertainmentPrice());
+    }
+
+    @Test
     public void getEstimatePrice_returnsEstimatePrice_true() {
         Event testEvent = new Event(10, "beef", "wine", "");
         assertTrue(testEvent.getEstimatePrice() instanceof Integer);
     }
+
+//    @Test
+//    public void calculateEstimatePrice_() {
+//    }
 }
