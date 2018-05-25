@@ -101,6 +101,6 @@ public class Event {
     }
 
     public void calculateEstimatePrice() {
-
+        estimatePrice = this.evaluateFoodPrice() + this.evaluateBeveragePrice() + this.evaluateEntertainmentPrice();
     }
 }
