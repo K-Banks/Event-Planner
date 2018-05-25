@@ -14,6 +14,6 @@ public class Event {
     }
 
     public Integer getNumberOfGuests() {
-        return 0;
+        return numberOfGuests;
     }
 }
