@@ -55,7 +55,7 @@ public class Event {
     }
 
     public String getCoupon() {
-        return null;
+        return coupon;
     }
 
     public Integer evaluateFoodPrice() {
